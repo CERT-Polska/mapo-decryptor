@@ -12,6 +12,7 @@
 | `MBIT-INFO.txt`   	| `.mbit`                	|
 | `DANTE-INFO.txt`  	| `.dante`                	|
 | `EDAB-Readme.txt` 	| `.edab`, `.edab1`        	|
+| `GOMER-README.txt` 	| `.gomer`                	|
 
 
 ## Requirements
