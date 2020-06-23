@@ -1,6 +1,6 @@
 # MAPO Decryptor
 
-### Note this is only a client decryptor script, in order to recover the key please use the mapo service at https://mapo.cert.pl/ or contact us at [info@cert.pl](mailto:info@cert.pl)
+### Note: this is only a client decryptor script, in order to recover the key please use the mapo service at https://mapo.cert.pl/ or contact us at [info@cert.pl](mailto:info@cert.pl)
 
 ## Currently supported versions
 
@@ -13,6 +13,7 @@
 | `DANTE-INFO.txt`  	| `.dante`                	|
 | `EDAB-Readme.txt` 	| `.edab`, `.edab1`        	|
 | `GOMER-README.txt` 	| `.gomer`                	|
+| `Sivo-README.txt` 	| `.sivo`                	|
 
 
 ## Requirements

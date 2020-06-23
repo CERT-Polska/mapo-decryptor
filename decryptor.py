@@ -21,13 +21,15 @@ READMES = [
     "DANTE-INFO.txt",
     "EDAB-README.txt",
     "GOMER-README.txt",
+    "Sivo-README.txt",
 ]
-EXTENSIONS = [".mapo", ".deto", ".mbit", ".dante", ".edab", ".edab1", ".gomer"]
+EXTENSIONS = [".mapo", ".deto", ".mbit", ".dante", ".edab", ".edab1", ".gomer", ".sivo"]
 VERSIONS = {
     "Key verify": "=+ Key verify =+\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)",
     "L2 Protection": "~ L2 Protection ~\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)",
     "EDAB": "~ EDAB ~\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)",
     "GOMER": "~ GOMER ~\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)",
+    "Key verify": "~ Key verify ~\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)",
 }
 
 
