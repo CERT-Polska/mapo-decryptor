@@ -24,13 +24,13 @@ READMES = [
     "Sivo-README.txt",
 ]
 EXTENSIONS = [".mapo", ".deto", ".mbit", ".dante", ".edab", ".edab1", ".gomer", ".sivo"]
-VERSIONS = {
-    "Key verify": "=+ Key verify =+\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)",
-    "L2 Protection": "~ L2 Protection ~\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)",
-    "EDAB": "~ EDAB ~\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)",
-    "GOMER": "~ GOMER ~\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)",
-    "Key verify": "~ Key verify ~\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)",
-}
+VERSIONS = [
+    ("Key verify", "=+ Key verify =+\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)"),
+    ("L2 Protection", "~ L2 Protection ~\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)"),
+    ("EDAB", "~ EDAB ~\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)"),
+    ("GOMER", "~ GOMER ~\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)"),
+    ("Key verify", "~ Key verify ~\n((?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?)"),
+]
 
 
 def print_banner():
@@ -185,7 +185,7 @@ def validate_key(key, note_path):
         + base64.b64encode(ransom_note.encode("utf-8")).decode("utf-8")
     )
 
-    for version, regex in VERSIONS.items():
+    for version, regex in VERSIONS:
         encrypted_test = re.findall(regex, ransom_note)
         if not encrypted_test:
             continue
