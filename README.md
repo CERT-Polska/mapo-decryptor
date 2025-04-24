@@ -1,6 +1,6 @@
 # MAPO Decryptor
 
-### Note: this is only a client decryptor script, in order to recover the key please use the mapo service at https://mapo.cert.pl/ or contact us at [info@cert.pl](mailto:info@cert.pl)
+### Note: this is only a client decryptor script, in order to recover the key please contact us at [info@cert.pl](mailto:info@cert.pl)
 
 ## Currently supported versions
 
